@@ -12,5 +12,5 @@ def iso_to_gregorian(iso_year, iso_week, iso_day):
 
 class TestDateConversion(unittest.TestCase):
     @given(dates())
-    def test_date_conversion(d):
-        assert iso_to_gregorian(datetime.isocalendar(d)) == d
+    def test_date_conversion(self, d):
+        assert iso_to_gregorian(*d.isocalendar()) == d
