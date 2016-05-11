@@ -8,5 +8,7 @@ setup(name='hypothesis_dates',
       author_email='jack.grahl@yahoo.co.uk',
       license='GNU GPL v3',
       packages=['hypothesis_dates'],
+      install_requires=['hypothesis'],
+      test_suite='examples',
       zip_safe=False)
 
